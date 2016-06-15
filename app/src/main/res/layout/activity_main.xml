@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <!-- 主界面 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_dl_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 引入Toolbar-->
+        <include layout="@layout/activity_main_content"
+            android:id="@+id/id_tb_main"/>
+
+
+        <!--<ListView-->
+        <!--android:id="@+id/id_lv_navi"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:background="#dddddd"-->
+        <!--android:divider="@color/navi_divider"-->
+        <!--android:dividerHeight="0dp" />-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/id_nav_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

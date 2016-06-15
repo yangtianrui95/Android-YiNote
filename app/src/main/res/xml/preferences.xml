@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 设置的类别 -->
+    <PreferenceCategory android:title="同步功能">
+
+        <!-- 设置单选 -->
+        <CheckBoxPreference
+            android:key="auto_sync"
+            android:summary="自动同步会每隔5分钟自动将数据备份到云"
+            android:title="自动同步" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
